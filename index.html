@@ -1,0 +1,700 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gourmet Garden</title>
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+      integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="index.css" />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+      crossorigin="anonymous"
+    ></script>
+    <script src="index.js"></script>
+  </head>
+  <body>
+    <header id="header">
+      <a href="index.html"
+        ><img
+          src="https://cdn.shopify.com/s/files/1/0592/9884/0756/files/GG-logo-Hyderabad_small.png?v=1638375445"
+          alt=""
+      /></a>
+
+      <!--search-bar-->
+      <div class="wrapper-search-bar row col-md-6 col-12 ms-3">
+        <div class="search-bar">
+          <input
+            onmousedown="search.html"
+            type="text"
+            id="search-input"
+            name="q"
+            placeholder="Search our store"
+            aria-label="Search our store"
+            class="search-bar__input"
+            autocomplete="off"
+          />
+          <button type="submit">
+            <img
+              class="search-bar__icon-img"
+              src="//cdn.shopify.com/s/files/1/0592/9884/0756/t/28/assets/header_search.svg?v=164721490308982976421661915666"
+              alt="Search"
+            />
+          </button>
+        </div>
+      </div>
+
+      <div class="">
+        <ul id="navbar">
+          <li><a class="active" id="home" href="index.html">Home</a></li>
+          <li><a id="my-account" href="myaccount.html">My Account</a></li>
+          <li>
+            <a href="cart.html">
+              <i class="fa-solid fa-cart-shopping"></i>
+              My Cart
+              <span id="cart-count" class="badge rounded-pill text-bg-success"
+                >0</span
+              >
+            </a>
+          </li>
+        </ul>
+      </div>
+    </header>
+
+    <!--Header category blocks-->
+
+    <section class="container my-header-categ">
+      <div class="d-flex flex-row justify-content-around align-content-around">
+        <div class="p-2 categ">
+          <a href="staples.html"
+            ><img
+              src="https://cdn.shopify.com/s/files/1/0592/9884/0756/files/Web_Icon-01_1.jpg?v=1667834853"
+              alt=""
+            />Staples</a
+          >
+        </div>
+        <div class="p-2 categ">
+          <a href="staples.html"
+            ><img
+              src="https://cdn.shopify.com/s/files/1/0592/9884/0756/files/5.png?v=1634573292"
+              alt=""
+            />Vegetables</a
+          >
+        </div>
+        <div class="p-2 categ">
+          <a href="staples.html"
+            ><img
+              src="https://cdn.shopify.com/s/files/1/0592/9884/0756/files/Web_Icon-01_1.jpg?v=1667834853"
+              alt=""
+            />Deals</a
+          >
+        </div>
+        <div class="p-2 categ">
+          <a href="staples.html"
+            ><img
+              src="https://cdn.shopify.com/s/files/1/0592/9884/0756/files/5.png?v=1634573292"
+              alt=""
+            />Vegetables</a
+          >
+        </div>
+        <div class="p-2 categ">
+          <a href="staples.html"
+            ><img
+              src="https://cdn.shopify.com/s/files/1/0592/9884/0756/files/4.png?v=1634573292"
+              alt=""
+            />Spices</a
+          >
+        </div>
+
+        <div class="p-2 categ">
+          <a href="staples.html"
+            ><img
+              src="https://cdn.shopify.com/s/files/1/0592/9884/0756/files/2.png?v=1634573292"
+              alt=""
+            />Fruits</a
+          >
+        </div>
+
+        <div class="p-2 categ">
+          <a href="staples.html"
+            ><img
+              src="https://cdn.shopify.com/s/files/1/0592/9884/0756/files/5.png?v=1634573292"
+              alt=""
+            />Vegetables</a
+          >
+        </div>
+        <div class="p-2 categ">
+          <a href="staples.html"
+            ><img
+              src="https://cdn.shopify.com/s/files/1/0592/9884/0756/files/5.png?v=1634573292"
+              alt=""
+            />Vegetables</a
+          >
+        </div>
+
+        <div class="p-2 categ">
+          <a href="staples.html"
+            ><img
+              src="https://cdn.shopify.com/s/files/1/0592/9884/0756/files/1.png?v=1634573292"
+              alt=""
+            />Leafy Greens</a
+          >
+        </div>
+
+        <div class="p-2 categ">
+          <a href="staples.html"
+            ><img
+              src="https://cdn.shopify.com/s/files/1/0592/9884/0756/files/6.png?v=1634573292"
+              alt=""
+            />Breads</a
+          >
+        </div>
+
+        <div class="p-2 categ">
+          <a href="staples.html"
+            ><img
+              src="https://cdn.shopify.com/s/files/1/0592/9884/0756/files/new_cheese_small_1.png?v=1636465429"
+              alt=""
+            />
+            Cheese</a
+          >
+        </div>
+        <div class="p-2 categ">
+          <a href="staples.html"
+            ><img
+              src="https://cdn.shopify.com/s/files/1/0592/9884/0756/files/5.png?v=1634573292"
+              alt=""
+            />Vegetables</a
+          >
+        </div>
+        <div class="p-2 categ">
+          <a href="staples.html"
+            ><img
+              src="https://cdn.shopify.com/s/files/1/0592/9884/0756/files/Screenshot_2022-04-01_095821.png?v=1648787579"
+              alt=""
+            />Oils & Sauce</a
+          >
+        </div>
+      </div>
+    </section>
+
+    <!--carousal-->
+    <section>
+      <div class="container-fluid mycontainer">
+        <div
+          id="carouselExampleIndicators"
+          class="carousel slide"
+          data-bs-ride="carousel"
+        >
+          <div class="carousel-indicators">
+            <button
+              type="button"
+              data-bs-target="#carouselExampleIndicators"
+              data-bs-slide-to="0"
+              class="active"
+              aria-current="true"
+              aria-label="Slide 1"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carouselExampleIndicators"
+              data-bs-slide-to="1"
+              aria-label="Slide 2"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carouselExampleIndicators"
+              data-bs-slide-to="2"
+              aria-label="Slide 3"
+            ></button>
+          </div>
+          <div class="carousel-inner">
+            <div class="carousel-item active" data-bs-interval="3000">
+              <img
+                src="https://cdn.shopify.com/s/files/1/0592/9884/0756/files/3_343d0128-7287-4cb7-804a-0c054f59147e.jpg?v=1675929860"
+                class="d-block w-100"
+                alt="slide1"
+              />
+            </div>
+            <div class="carousel-item" data-bs-interval="3000">
+              <img
+                src="https://cdn.shopify.com/s/files/1/0592/9884/0756/files/Millet_Banner.jpg?v=1674565182"
+                class="d-block w-100"
+                alt="slide2"
+              />
+            </div>
+            <div class="carousel-item" data-bs-interval="3000">
+              <img
+                src="https://cdn.shopify.com/s/files/1/0592/9884/0756/files/2-100_1.jpg?v=1676612993"
+                class="d-block w-100"
+                alt="slide3"
+              />
+            </div>
+          </div>
+          <button
+            class="carousel-control-prev"
+            type="button"
+            data-bs-target="#carouselExampleIndicators"
+            data-bs-slide="prev"
+          >
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button
+            class="carousel-control-next"
+            type="button"
+            data-bs-target="#carouselExampleIndicators"
+            data-bs-slide="next"
+          >
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!--What you will get with us-->
+
+    <div class="promises-wrapper">
+      <div class="promise-image-wrapper">
+        <img
+          class="topp-left"
+          src="https://cdn.shopify.com/s/files/1/0592/9884/0756/t/28/assets/categ_leaf.png?v=51882160400123781661661915664"
+          alt=""
+        />
+
+        <img
+          class="bottomm-left"
+          src="https://cdn.shopify.com/s/files/1/0592/9884/0756/t/28/assets/what-you-get_leaf.png?v=150767836958736632121661915667"
+          alt=""
+        />
+
+        <img
+          class="topp-right"
+          src="https://cdn.shopify.com/s/files/1/0592/9884/0756/t/28/assets/categ_leaf_2.png?v=31062033357078023201661915664"
+          alt=""
+        />
+
+        <img
+          class="bottomm-right"
+          src="https://cdn.shopify.com/s/files/1/0592/9884/0756/t/28/assets/what-you-get_leaf_2.png?v=167990670059127587491661915667"
+          alt=""
+        />
+      </div>
+
+      <section class="promises section-pad">
+        <div class="heading" id="promise-div-1">
+          <h2>What you'll get with us</h2>
+        </div>
+
+        <div
+          class="d-flex flex-row promises-wrap container justify-content-center align-content-around flex-wrap"
+          id="promise-div-2"
+        >
+          <div class="p-2 promise-item">
+            <a href="unmatchedfreshness.html">
+              <img
+                src="https://cdn.shopify.com/s/files/1/0592/9884/0756/files/Icons-01_1000x.png?v=1630414970"
+                alt=""
+              />
+              <p id="wygt">UNMATCHED FRESHNESS</p>
+              <p id="wygt1">We harvest for your order</p>
+            </a>
+          </div>
+
+          <div class="p-2 promise-item">
+            <a href="unmatchedfreshness.html">
+              <img
+                src="https://cdn.shopify.com/s/files/1/0592/9884/0756/files/Icons-04_1000x.png?v=1630414970"
+                alt=""
+              />
+              <p id="wygt">ASSURED SAFETY</p>
+              <p id="wygt1">Zero Residue & Zero Additives</p>
+            </a>
+          </div>
+
+          <div class="p-2 promise-item">
+            <a href="unmatchedfreshness.html">
+              <img
+                src="https://cdn.shopify.com/s/files/1/0592/9884/0756/files/Icons-03_1000x.png?v=1630414970"
+                alt=""
+              />
+              <p id="wygt">ONE STOP DESTINATION</p>
+              <p id="wygt1">Widest Range of fresh essentials</p>
+            </a>
+          </div>
+
+          <div class="p-2 promise-item">
+            <a href="unmatchedfreshness.html">
+              <img
+                src="https://cdn.shopify.com/s/files/1/0592/9884/0756/files/Icons-05_1000x.png?v=1630414970"
+                alt=""
+              />
+              <p id="wygt">ECOLOGICALLY FRIENDLY</p>
+              <p id="wygt1">90% less land water and plastic use</p>
+            </a>
+          </div>
+
+          <div class="p-2 promise-item">
+            <a href="unmatchedfreshness.html">
+              <img
+                src="https://cdn.shopify.com/s/files/1/0592/9884/0756/files/Icons-02_1000x.png?v=1630414970"
+                alt=""
+              />
+              <p id="wygt">CONVENIENCE</p>
+              <p id="wygt1">Nextday doorstep delivery</p>
+            </a>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <!--Our BestSellers-->
+
+    <section id="best-sellers" class="section-pad">
+      <h2 id="bshead">Our Bestsellers</h2>
+      <div class="bestsellers-container row">
+        <div class="bestsellers col-lg-3">
+          <img
+            src="https://cdn.shopify.com/s/files/1/0592/9884/0756/products/GheeBottle1_300x.jpg?v=1666177520"
+            alt="Cow Ghee"
+          />
+          <div class="des">
+            <span>A2 Gir Cow Ghee</span>
+            <h5 id="reg-p">Rs. 1500</h5>
+            <h5>Rs. 1299</h5>
+            <h6>500ml</h6>
+          </div>
+          <button
+            class="btn btn-success"
+            id="cart2"
+            onclick="addToCart(4, 'A2 Gir Cow Ghee', 1299, 'https://cdn.shopify.com/s/files/1/0592/9884/0756/products/GheeBottle1_300x.jpg?v=1666177520', 'cart2')"
+          >
+            Add to cart
+          </button>
+        </div>
+        <div class="bestsellers col-lg-3">
+          <img
+            src="https://cdn.shopify.com/s/files/1/0592/9884/0756/products/Garlicp4_300x.png?v=1649055936"
+            alt="Extra Virgin Olive Oil"
+          />
+          <div class="des">
+            <span>Extra Virgin Olive Oil</span>
+            <h5 id="reg-p">Rs. 500</h5>
+            <h5>Rs. 419</h5>
+            <h6>500ml</h6>
+          </div>
+          <button class="btn btn-success" disabled="disabled">Sold out</button>
+        </div>
+
+        <div class="bestsellers col-lg-3">
+          <img
+            src="https://cdn.shopify.com/s/files/1/0592/9884/0756/products/Tomato-_-garlic_300x.png?v=1657893028"
+            alt="Tomato and Garlic Salsa"
+          />
+          <div class="des">
+            <span>Tomato and Garlic Salsa</span>
+            <h5 id="reg-p">Rs. 175</h5>
+            <h5>Rs. 99</h5>
+            <h6>200gm</h6>
+          </div>
+          <button
+            class="btn btn-success"
+            onclick="addToCart(1, 'Tomato and Garlic Salsa', 99, 'https://cdn.shopify.com/s/files/1/0592/9884/0756/products/Tomato-_-garlic_300x.png?v=1657893028', 'Tomato')"
+          >
+            Add to cart
+          </button>
+        </div>
+
+        <div class="bestsellers col-lg-3">
+          <img
+            src="https://cdn.shopify.com/s/files/1/0592/9884/0756/products/Cold-Pressed-Sesame-Oil-500ml_300x.jpg?v=1649745320"
+            alt="Cold Pressed sesame oil"
+          />
+          <div class="des">
+            <span>Cold Pressed sesame oil</span>
+            <h5 id="reg-p">Rs. 465</h5>
+            <h5>Rs. 379</h5>
+            <h6>500ml</h6>
+          </div>
+          <button
+            id="cold-p-oil"
+            class="btn btn-success"
+            onclick="addToCart(3, 'Cold Pressed sesame oil', 379, 'https://cdn.shopify.com/s/files/1/0592/9884/0756/products/Cold-Pressed-Sesame-Oil-500ml_300x.jpg?v=1649745320', 'cold-p-oil')"
+          >
+            Add to cart
+          </button>
+        </div>
+
+        <div class="bestsellers col-lg-3">
+          <img
+            src="https://cdn.shopify.com/s/files/1/0592/9884/0756/products/SonaMasooriRawRice_300x.jpg?v=1667619652"
+            alt="Sona Masoori Raw Rice"
+          />
+          <div class="des">
+            <span>Sona Masoori Raw Rice</span>
+            <h5 id="reg-p">Rs. 106</h5>
+            <h5>Rs. 85</h5>
+            <h6>1kg</h6>
+          </div>
+          <button
+            id="cold-p-oil"
+            class="btn btn-success"
+            onclick="addToCart(6, 'Sona Masoori Raw Rice', 85, 'https://cdn.shopify.com/s/files/1/0592/9884/0756/products/SonaMasooriRawRice_300x.jpg?v=1667619652', 'sona-masoori')"
+          >
+            Add to cart
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!--Explore our categories-->
+
+    <section id="explore" class="">
+      <div id="explrhead mt-5">
+        <img
+          id="leaf1"
+          src="https://cdn.shopify.com/s/files/1/0592/9884/0756/t/28/assets/categ_leaf.png?v=51882160400123781661661915664"
+          alt=""
+        />
+        <h2>Explore Our Categories</h2>
+        <img
+          id="leaf2"
+          src="https://cdn.shopify.com/s/files/1/0592/9884/0756/t/28/assets/categ_leaf_2.png?v=31062033357078023201661915664"
+          alt=""
+        />
+      </div>
+      <div id="exploretab">
+        <div id="stablediv">
+          <div class="exploreitem col-3">
+            <a href="staples.html"
+              ><img
+                src="https://cdn.shopify.com/s/files/1/0592/9884/0756/files/Web_Icon-02_1_1.jpg?v=1667834887"
+                alt=""
+              />Staples</a
+            >
+          </div>
+          <div id="ghee">
+            <a href="staples.html"
+              ><img
+                src="https://cdn.shopify.com/s/files/1/0592/9884/0756/files/Web_Icon-02_1_1.jpg?v=1667834887"
+                alt=""
+              />Staples</a
+            >
+          </div>
+          <div id="gifting">
+            <a href="staples.html"
+              ><img
+                src="https://cdn.shopify.com/s/files/1/0592/9884/0756/files/Web_Icon-02_1_1.jpg?v=1667834887"
+                alt=""
+              />Staples</a
+            >
+          </div>
+          <div id="dailydeals">
+            <a href="staples.html"
+              ><img
+                src="https://cdn.shopify.com/s/files/1/0592/9884/0756/files/Web_Icon-02_1_1.jpg?v=1667834887"
+                alt=""
+              />Staples</a
+            >
+          </div>
+        </div>
+        <div id="stablediv1">
+          <div class="exploreitem col-3">
+            <a href="staples.html"
+              ><img
+                src="https://cdn.shopify.com/s/files/1/0592/9884/0756/files/Web_Icon-02_1_1.jpg?v=1667834887"
+                alt=""
+              />Staples</a
+            >
+          </div>
+          <div id="ghee">
+            <a href="staples.html"
+              ><img
+                src="https://cdn.shopify.com/s/files/1/0592/9884/0756/files/Web_Icon-02_1_1.jpg?v=1667834887"
+                alt=""
+              />Staples</a
+            >
+          </div>
+          <div id="gifting">
+            <a href="staples.html"
+              ><img
+                src="https://cdn.shopify.com/s/files/1/0592/9884/0756/files/Web_Icon-02_1_1.jpg?v=1667834887"
+                alt=""
+              />Staples</a
+            >
+          </div>
+          <div id="dailydeals">
+            <a href="staples.html"
+              ><img
+                src="https://cdn.shopify.com/s/files/1/0592/9884/0756/files/Web_Icon-02_1_1.jpg?v=1667834887"
+                alt=""
+              />Staples</a
+            >
+          </div>
+        </div>
+        <div id="stablediv2">
+          <div class="exploreitem col-3">
+            <a href="staples.html"
+              ><img
+                src="https://cdn.shopify.com/s/files/1/0592/9884/0756/files/Web_Icon-02_1_1.jpg?v=1667834887"
+                alt=""
+              />Staples</a
+            >
+          </div>
+          <div id="ghee">
+            <a href="staples.html"
+              ><img
+                src="https://cdn.shopify.com/s/files/1/0592/9884/0756/files/Web_Icon-02_1_1.jpg?v=1667834887"
+                alt=""
+              />Staples</a
+            >
+          </div>
+          <div id="gifting">
+            <a href="staples.html"
+              ><img
+                src="https://cdn.shopify.com/s/files/1/0592/9884/0756/files/Web_Icon-02_1_1.jpg?v=1667834887"
+                alt=""
+              />Staples</a
+            >
+          </div>
+          <div id="dailydeals">
+            <a href="staples.html"
+              ><img
+                src="https://cdn.shopify.com/s/files/1/0592/9884/0756/files/Web_Icon-02_1_1.jpg?v=1667834887"
+                alt=""
+              />Staples</a
+            >
+          </div>
+        </div>
+        <div id="stablediv3">
+          <div class="exploreitem col-3">
+            <a href="staples.html"
+              ><img
+                src="https://cdn.shopify.com/s/files/1/0592/9884/0756/files/Web_Icon-02_1_1.jpg?v=1667834887"
+                alt=""
+              />Staples</a
+            >
+          </div>
+          <div id="ghee">
+            <a href="staples.html"
+              ><img
+                src="https://cdn.shopify.com/s/files/1/0592/9884/0756/files/Web_Icon-02_1_1.jpg?v=1667834887"
+                alt=""
+              />Staples</a
+            >
+          </div>
+        </div>
+      </div>
+    </section>
+    <div id="about">
+      <h1 id=" abouthead"><b>Follow us @gourmetgardenindia</b></h1>
+      <div>
+        <img
+          id="aboutimg"
+          src="https://cdn.shopify.com/s/files/1/0592/9884/0756/files/4b.jpg?v=1630415024"
+          alt=""
+        />
+        <img
+          id="aboutimg"
+          src="https://cdn.shopify.com/s/files/1/0592/9884/0756/files/7b.jpg?v=1630415023"
+          alt=""
+        />
+        <img
+          id="aboutimg"
+          src="https://cdn.shopify.com/s/files/1/0592/9884/0756/files/5b.jpg?v=1630415023"
+          alt=""
+        />
+        <img
+          id="aboutimg"
+          src="https://cdn.shopify.com/s/files/1/0592/9884/0756/files/1a_314c4bf4-fef0-4e8f-93b4-f2050411f172.jpg?v=1634573857"
+          alt=""
+        />
+        <img
+          id="aboutimg"
+          src="https://cdn.shopify.com/s/files/1/0592/9884/0756/files/3a_d6e56e87-725f-4413-af10-c3510a0ec11c.jpg?v=1634573857"
+          alt=""
+        />
+        <img
+          id="aboutimg"
+          src="https://cdn.shopify.com/s/files/1/0592/9884/0756/files/2a_03e448b6-534e-46f5-9423-45fd9eb3f8c7.jpg?v=1634573856"
+          alt=""
+        />
+      </div>
+    </div>
+
+    <footer id="footer">
+      <img
+        id="footimg"
+        src="https://cdn.shopify.com/s/files/1/0592/9884/0756/files/gg_header_logo_0bdc246e-e012-4dd7-816d-83e404bbe9d9_292x.png?v=1634574146"
+        alt=""
+      />
+      <img
+        id="footimg1"
+        src="https://cdn.shopify.com/s/files/1/0592/9884/0756/t/28/assets/footer_fb_icon.svg?v=110095049522194708271661915665"
+        alt=""
+      />
+      <img
+        id="footimg2"
+        src="https://cdn.shopify.com/s/files/1/0592/9884/0756/t/28/assets/footer_ig_icon.svg?v=110514061604159201831661915665"
+        alt=""
+      />
+      <img
+        id="footimg3"
+        src="https://cdn.shopify.com/s/files/1/0628/9725/8731/files/andoid-btn.png?v=1647696676"
+        alt=""
+      />
+      <img
+        id="footimg4"
+        src="https://cdn.shopify.com/s/files/1/0628/9725/8731/files/ios-btn.png?v=1647696676"
+        alt=""
+      />
+      <h6 id="foothead">PRIVACY POLICY</h6>
+      <h6 id="foothead1">TERMS OF SERVICE</h6>
+      <h6 id="foothead2">
+        COPYRIGHTS &copy GOURMET GARDEN. ALL RIGHTS RESERVED.
+      </h6>
+    </footer>
+  </body>
+  <script>
+    localStorage.removeItem("cart");
+
+    const cart = {};
+
+    function addToCart(id, productName, price, img, targetProduct) {
+      let cartCount = document.getElementById("cart-count").innerText;
+      if (cart[id]) {
+        delete cart[id];
+        // document.getElementById(targetProduct).innerText = "Add to cart";
+        cartCount--;
+      } else {
+        const item = {
+          id: id,
+          product: productName,
+          price: price,
+          img: img,
+        };
+        cart[id] = item;
+        // document.getElementById(targetProduct).innerText = "Remove item";
+        cartCount++;
+      }
+      document.getElementById("cart-count").innerText = cartCount;
+      localStorage.setItem("cart", JSON.stringify(cart));
+      console.log(localStorage.getItem("cart"));
+    }
+  </script>
+</html>
